@@ -8,5 +8,7 @@ def myhttp(request):
 
 
 def aryan_html(request):
-    response_data = render_to_string('pages/page-html.html')
-    return HttpResponse(response_data)
+    return render(request, 'pages/page-html.html')
+    # # update down syntax
+    # response_data = render_to_string('pages/page-html.html')
+    # return HttpResponse(response_data)
