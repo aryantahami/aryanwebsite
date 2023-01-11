@@ -20,5 +20,6 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('app/', include('pages.urls')),
-    path('', views.main_page)
+    path('', views.main_page),
+    path('templatemo/', include('templatemo.urls')),
 ]
