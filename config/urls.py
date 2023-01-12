@@ -20,6 +20,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('app/', include('pages.urls')),
-    path('', views.main_page),
-    path('templatemo/', include('templatemo.urls')),
+    path('', views.main_page, name='home'),
+    path('about', views.about, name='about'),
+    path('contact', views.contact, name='contact'),
 ]

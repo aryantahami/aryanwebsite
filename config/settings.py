@@ -40,7 +40,6 @@ INSTALLED_APPS = [
 
     'accounts',
     'pages',
-    'templatemo',
 ]
 
 MIDDLEWARE = [
