@@ -12,3 +12,10 @@ def about(request):
 def contact(request):
     return render(request, 'templatemo/contact.html')
 
+
+def listing_page(request):
+    return render(request, 'templatemo/listing-page.html')
+
+
+def detail_page(request):
+    return render(request, 'templatemo/detail-page.html')
