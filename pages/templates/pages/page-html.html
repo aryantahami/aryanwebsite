@@ -41,6 +41,7 @@ https://templatemo.com/tm-584-pod-talk
 
     <body>
 
+
         <main>
 
             <nav class="navbar navbar-expand-lg">
@@ -102,7 +103,12 @@ https://templatemo.com/tm-584-pod-talk
 
                         <div class="col-lg-12 col-12">
                             <div class="text-center mb-5 pb-2">
-                                <h1 class="text-white">Listen to Pod Talk</h1>
+                                <h1 class="text-white">
+                                    {% for arti in my_article %}
+                                        <h2>{{ arti.title }}</h2>
+
+                                    {% endfor %}
+                                </h1>
 
                                 <p class="text-white">Listen it everywhere. Explore your fav podcasts.</p>
 
