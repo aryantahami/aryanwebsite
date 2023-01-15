@@ -3,6 +3,8 @@ from django.shortcuts import reverse
 
 
 class HomePageViewTest(TestCase):
+
+    # test url
     def test_home_view_url(self):
         response = self.client.get('/')
         self.assertEqual(response.status_code, 200)
@@ -23,6 +25,7 @@ class HomePageViewTest(TestCase):
         response = self.client.get('/pages/detail_page/')
         self.assertEqual(response.status_code, 200)
 
+    # test urls by name
     def test_home_view_url_by_name(self):
         response = self.client.get(reverse('home'))
         self.assertEqual(response.status_code, 200)
