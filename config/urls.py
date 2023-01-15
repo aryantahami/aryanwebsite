@@ -23,6 +23,5 @@ urlpatterns = [
     path('', views.main_page, name='home'),
     path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
-    path('pages/listing_page/', views.listing_page, name='listing-page'),
-    path('pages/detail_page/', views.detail_page, name='detail-page'),
+    path('blog/', include('blog.urls')),
 ]

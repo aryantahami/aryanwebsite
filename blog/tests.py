@@ -18,11 +18,11 @@ class HomePageViewTest(TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_list_view_url(self):
-        response = self.client.get('/pages/listing_page/')
+        response = self.client.get('/blog/listing_page/')
         self.assertEqual(response.status_code, 200)
 
     def test_detail_view_url(self):
-        response = self.client.get('/pages/detail_page/')
+        response = self.client.get('/blog/detail_page/')
         self.assertEqual(response.status_code, 200)
 
     # test urls by name
