@@ -18,7 +18,7 @@
 
                     </div>
                 </div>
-            </header>
+             </header>
 
 
             <section class="latest-podcast-section section-padding pb-0" id="section_2">
@@ -27,17 +27,21 @@
 
                         <div class="col-lg-10 col-12">
                             <div class="section-title-wrap mb-5">
-                                <h4 class="section-title">Daily talk</h4>
+                                <h4 class="section-title">
+                                    {{ post.title }}
+                                </h4>
                             </div>
 
                             <div class="row">
                                 <div class="col-lg-3 col-12">
                                     <div class="custom-block-icon-wrap">
                                         <div class="custom-block-image-wrap custom-block-image-detail-page">
-                                            <img src="../../../static/images/podcast/11683425_4790593.jpg" class="custom-block-image img-fluid" alt="">
+                                            <img src="../../../static/images/podcast/11683425_4790593.jpg"
+                                                 class="custom-block-image img-fluid" alt="">
                                         </div>
                                     </div>
                                 </div>
+
 
                                 <div class="col-lg-9 col-12">
                                     <div class="custom-block-info">
@@ -57,24 +61,26 @@
                                             <small class="ms-auto">Episode <span class="badge">15</span></small>
                                         </div>
 
-                                        <h2 class="mb-2">Modern Vintage</h2>
+                                        <h2 class="mb-2">
+                                            {% for post in posts_list %}
+                                                {{ post.title }}
+                                            {% endfor %}
+                                        </h2>
 
-                                        <p>What is Content Marketing? If you are wondering what content marketing is all about, this is the place to start.</p>
-
-                                        <p>You are not allowed to redistribute this template ZIP file on any other template collection website. Please contact TemplateMo for more information.</p>
-
-                                        <p>Pod Talk HTML CSS Template is made by Bootstrap v5.2.2 framework. You are allowed to modify and use this template for your business websites.</p>
+                                        <p>{{ post.text }}</p>
 
                                         <div class="profile-block profile-detail-block d-flex flex-wrap align-items-center mt-5">
                                             <div class="d-flex mb-3 mb-lg-0 mb-md-0">
-                                                <img src="../../../static/images/profile/woman-posing-black-dress-medium-shot.jpg" class="profile-block-image img-fluid" alt="">
+                                                <img src="../../../static/images/profile/woman-posing-black-dress-medium-shot.jpg"
+                                                     class="profile-block-image img-fluid" alt="">
 
                                                 <p>
-                                                    Elsa
+                                                    {{ post.author }}
                                                     <img src="../../../static/images/verified.png" class="verified-image img-fluid" alt="">
-                                                    <strong>Influencer</strong>
+                                                    <strong>{{ post.datetime_created }}</strong>
                                                 </p>
                                             </div>
+
 
                                             <ul class="social-icon ms-lg-auto ms-md-auto">
                                                 <li class="social-icon-item">
@@ -95,6 +101,7 @@
                             </div>
                         </div>
 
+
                     </div>
                 </div>
             </section>
@@ -110,23 +117,26 @@
                             </div>
                         </div>
 
+
                         <div class="col-lg-4 col-12 mb-4 mb-lg-0">
                             <div class="custom-block custom-block-full">
                                 <div class="custom-block-image-wrap">
-                                    <a href="detail-page.html">
-                                        <img src="../../../static/images/podcast/27376480_7326766.jpg" class="custom-block-image img-fluid" alt="">
+                                    <a href="detail_page.html">
+                                        <img src="../../../static/images/podcast/27376480_7326766.jpg"
+                                             class="custom-block-image img-fluid" alt="">
                                     </a>
                                 </div>
 
                                 <div class="custom-block-info">
                                     <h5 class="mb-2">
-                                        <a href="detail-page.html">
+                                        <a href="detail_page.html">
                                             Vintage Show
                                         </a>
                                     </h5>
 
                                     <div class="profile-block d-flex">
-                                        <img src="../../../static/images/profile/woman-posing-black-dress-medium-shot.jpg" class="profile-block-image img-fluid" alt="">
+                                        <img src="../../../static/images/profile/woman-posing-black-dress-medium-shot.jpg"
+                                             class="profile-block-image img-fluid" alt="">
 
                                         <p>Elsa
                                             <strong>Influencer</strong></p>
@@ -164,24 +174,27 @@
                         <div class="col-lg-4 col-12 mb-4 mb-lg-0">
                             <div class="custom-block custom-block-full">
                                 <div class="custom-block-image-wrap">
-                                    <a href="detail-page.html">
-                                        <img src="../../../static/images/podcast/27670664_7369753.jpg" class="custom-block-image img-fluid" alt="">
+                                    <a href="detail_page.html">
+                                        <img src="../../../static/images/podcast/27670664_7369753.jpg"
+                                             class="custom-block-image img-fluid" alt="">
                                     </a>
                                 </div>
 
                                 <div class="custom-block-info">
                                     <h5 class="mb-2">
-                                        <a href="detail-page.html">
+                                        <a href="detail_page.html">
                                             Vintage Show
                                         </a>
                                     </h5>
 
                                     <div class="profile-block d-flex">
-                                        <img src="../../../static/images/profile/cute-smiling-woman-outdoor-portrait.jpg" class="profile-block-image img-fluid" alt="">
+                                        <img src="../../../static/images/profile/cute-smiling-woman-outdoor-portrait.jpg"
+                                             class="profile-block-image img-fluid" alt="">
 
                                         <p>
                                             Taylor
-                                            <img src="../../../static/images/verified.png" class="verified-image img-fluid" alt="">
+                                            <img src="../../../static/images/verified.png"
+                                                 class="verified-image img-fluid" alt="">
                                             <strong>Creator</strong>
                                         </p>
                                     </div>
@@ -218,24 +231,27 @@
                         <div class="col-lg-4 col-12">
                             <div class="custom-block custom-block-full">
                                 <div class="custom-block-image-wrap">
-                                    <a href="detail-page.html">
-                                        <img src="../../../static/images/podcast/12577967_02.jpg" class="custom-block-image img-fluid" alt="">
+                                    <a href="detail_page.html">
+                                        <img src="../../../static/images/podcast/12577967_02.jpg"
+                                             class="custom-block-image img-fluid" alt="">
                                     </a>
                                 </div>
 
                                 <div class="custom-block-info">
                                     <h5 class="mb-2">
-                                        <a href="detail-page.html">
+                                        <a href="detail_page.html">
                                             Daily Talk
                                         </a>
                                     </h5>
 
                                     <div class="profile-block d-flex">
-                                        <img src="../../../static/images/profile/handsome-asian-man-listening-music-through-headphones.jpg" class="profile-block-image img-fluid" alt="">
+                                        <img src="../../../static/images/profile/handsome-asian-man-listening-music-through-headphones.jpg"
+                                             class="profile-block-image img-fluid" alt="">
 
                                         <p>
                                             William
-                                            <img src="../../../static/images/verified.png" class="verified-image img-fluid" alt="">
+                                            <img src="../../../static/images/verified.png"
+                                                 class="verified-image img-fluid" alt="">
                                             <strong>Vlogger</strong></p>
                                     </div>
 

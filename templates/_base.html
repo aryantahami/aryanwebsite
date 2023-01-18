@@ -76,9 +76,10 @@ https://templatemo.com/tm-584-pod-talk
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
 
                                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="{% url 'listing-page' %}">Listing Page</a></li>
-
-                                    <li><a class="dropdown-item" href="{% url 'detail-page' %}">Detail Page</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'listing_page' %}">Listing Page</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Detail Page</a>
+                                    </li>
                                 </ul>
                             </li>
 
@@ -93,6 +94,7 @@ https://templatemo.com/tm-584-pod-talk
                     </div>
                 </div>
             </nav>
+
 
 
 {% block content %}

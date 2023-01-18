@@ -42,9 +42,9 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
 
                                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item active" href="listing-page.html">Listing Page</a></li>
+                                    <li><a class="dropdown-item active" href="listing_page.html">Listing Page</a></li>
 
-                                    <li><a class="dropdown-item" href="detail-page.html">Detail Page</a></li>
+                                    <li><a class="dropdown-item" href="detail_page.html">Detail Page</a></li>
                                 </ul>
                             </li>
     
@@ -81,7 +81,11 @@
 
                         <div class="col-lg-12 col-12">
                             <div class="section-title-wrap mb-5">
-                                <h4 class="section-title">فهرست مقالات</h4>
+                                <h4 class="section-title">
+                                    {% for post in posts_list %}
+                                        {{ post.title }}
+                                    {% endfor %}
+                                </h4>
                             </div>
                         </div>
 
@@ -92,7 +96,7 @@
                                     <div class="">
                                         <div class="custom-block-icon-wrap">
                                             <div class="section-overlay"></div>
-                                            <a href="detail-page.html" class="custom-block-image-wrap">
+                                            <a href="detail_page.html" class="custom-block-image-wrap">
                                                 <img src="{{ post.image }}"
                                                      class="custom-block-image img-fluid" alt="">
 
@@ -103,8 +107,8 @@
                                     </div>
 
                                     <div class="mt-2">
-                                        <a href="#" class="btn custom-btn">
-                                            Subscribe
+                                        <a href="{% url 'detail_page' post.id %}" class="btn custom-btn">
+                                            read more
                                         </a>
                                     </div>
                                 </div>
@@ -120,7 +124,7 @@
                                     </div>
 
                                     <h5 class="mb-2">
-                                        <a href="detail-page.html">
+                                        <a href="detail_page.html">
                                             {{ post.title }}
                                         </a>
                                     </h5>
@@ -218,14 +222,14 @@
                         <div class="col-lg-4 col-12 mb-4 mb-lg-0">
                             <div class="custom-block custom-block-full">
                                 <div class="custom-block-image-wrap">
-                                    <a href="detail-page.html">
+                                    <a href="detail_page.html">
                                         <img src="../../../static/images/podcast/27376480_7326766.jpg" class="custom-block-image img-fluid" alt="">
                                     </a>
                                 </div>
 
                                 <div class="custom-block-info">
                                     <h5 class="mb-2">
-                                        <a href="detail-page.html">
+                                        <a href="detail_page.html">
                                             Vintage Show
                                         </a>
                                     </h5>
@@ -269,14 +273,14 @@
                         <div class="col-lg-4 col-12 mb-4 mb-lg-0">
                             <div class="custom-block custom-block-full">
                                 <div class="custom-block-image-wrap">
-                                    <a href="detail-page.html">
+                                    <a href="detail_page.html">
                                         <img src="../../../static/images/podcast/27670664_7369753.jpg" class="custom-block-image img-fluid" alt="">
                                     </a>
                                 </div>
 
                                 <div class="custom-block-info">
                                     <h5 class="mb-2">
-                                        <a href="detail-page.html">
+                                        <a href="detail_page.html">
                                             Vintage Show
                                         </a>
                                     </h5>
@@ -323,14 +327,14 @@
                         <div class="col-lg-4 col-12">
                             <div class="custom-block custom-block-full">
                                 <div class="custom-block-image-wrap">
-                                    <a href="detail-page.html">
+                                    <a href="detail_page.html">
                                         <img src="../../../static/images/podcast/12577967_02.jpg" class="custom-block-image img-fluid" alt="">
                                     </a>
                                 </div>
 
                                 <div class="custom-block-info">
                                     <h5 class="mb-2">
-                                        <a href="detail-page.html">
+                                        <a href="detail_page.html">
                                             Daily Talk
                                         </a>
                                     </h5>
