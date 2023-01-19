@@ -9,7 +9,7 @@ class Post(models.Model):
 
     title = models.CharField(max_length=100)
     text = models.TextField()
-    image = models.ImageField(upload_to='blog/templates/images')
+    image = models.ImageField(upload_to='templates/images/')
     author = models.ForeignKey('auth.user', on_delete=models.CASCADE)
     datetime_created = models.DateTimeField(auto_now_add=True)
     datetime_modified = models.DateTimeField(auto_now=True)

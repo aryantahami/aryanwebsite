@@ -36,7 +36,7 @@
                                 <div class="col-lg-3 col-12">
                                     <div class="custom-block-icon-wrap">
                                         <div class="custom-block-image-wrap custom-block-image-detail-page">
-                                            <img src="../../../static/images/podcast/11683425_4790593.jpg"
+                                            <img src="{{ post.image.url }}"
                                                  class="custom-block-image img-fluid" alt="">
                                         </div>
                                     </div>
@@ -62,16 +62,14 @@
                                         </div>
 
                                         <h2 class="mb-2">
-                                            {% for post in posts_list %}
-                                                {{ post.title }}
-                                            {% endfor %}
+                                            {{ post.title }}
                                         </h2>
 
                                         <p>{{ post.text }}</p>
 
                                         <div class="profile-block profile-detail-block d-flex flex-wrap align-items-center mt-5">
                                             <div class="d-flex mb-3 mb-lg-0 mb-md-0">
-                                                <img src="../../../static/images/profile/woman-posing-black-dress-medium-shot.jpg"
+                                                <img src="{{ post.image.url }}"
                                                      class="profile-block-image img-fluid" alt="">
 
                                                 <p>
