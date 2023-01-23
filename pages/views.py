@@ -17,3 +17,7 @@ def aryan_html(request):
     # # update down syntax
     # response_data = render_to_string('pages/page-html.html')
     # return HttpResponse(response_data)
+
+
+def meta(request):
+    return render(request, 'pages/metaverse.html')
