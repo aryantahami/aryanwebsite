@@ -44,13 +44,13 @@ https://templatemo.com/tm-584-pod-talk
 
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand me-lg-5 me-0" href="{% url 'home' %}">
-                        <img src="../../static/images/pod-talk-logo.png" class="logo-image img-fluid" alt="templatemo pod talk">
-                    </a>
+{#                    <a class="navbar-brand me-lg-5 me-0" href="{% url 'home' %}">#}
+{#                        <img src="../static/images/aryan-tech.png" class="logo-image img-fluid" alt="t">#}
+{#                    </a>#}
 
                     <form action="#" method="get" class="custom-form search-form flex-fill me-3" role="search">
                         <div class="input-group input-group-lg">
-                            <input name="search" type="search" class="form-control" id="search" placeholder="Search Podcast" aria-label="Search">
+                            <input name="search" type="search" class="form-control" id="search" placeholder="جستجو کنید" aria-label="Search">
 
                             <button type="submit" class="form-control" id="submit">
                                 <i class="bi-search"></i>
@@ -65,31 +65,32 @@ https://templatemo.com/tm-584-pod-talk
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-lg-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" href="{% url 'home' %}">Home</a>
+                                <a class="nav-link active" href="{% url 'home' %}">خانه</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="{% url 'about' %}">About</a>
+                                <a class="nav-link" href="{% url 'about' %}">درباره ما</a>
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink"
+                                   role="button" data-bs-toggle="dropdown" aria-expanded="false">صفحات</a>
 
                                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="{% url 'listing_page' %}">Listing Page</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'listing_page' %}">لیست پست ها</a></li>
                                     <li>
-                                        <a class="dropdown-item" href="#">Detail Page</a>
+                                        <a class="dropdown-item" href="#">جزئیات پست ها</a>
                                     </li>
                                 </ul>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                                <a class="nav-link" href="{% url 'contact' %}">ارتباط با ما</a>
                             </li>
                         </ul>
 
                         <div class="ms-4">
-                            <a href="#section_3" class="btn custom-btn custom-border-btn smoothscroll">Get started</a>
+                            <a href="#section_3" class="btn custom-btn custom-border-btn smoothscroll">ورود</a>
                         </div>
                     </div>
                 </div>
@@ -107,13 +108,14 @@ https://templatemo.com/tm-584-pod-talk
 
                     <div class="col-lg-6 col-12 mb-5 mb-lg-0">
                         <div class="subscribe-form-wrap">
-                            <h6>Subscribe. Every weekly.</h6>
+                            <h6>آخرین اطلاعات را دریافت نمائید</h6>
 
                             <form class="custom-form subscribe-form" action="#" method="get" role="form">
-                                <input type="email" name="subscribe-email" id="subscribe-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email Address" required="">
+                                <input type="email" name="subscribe-email" id="subscribe-email" pattern="[^ @]*@[^ @]*"
+                                       class="form-control" placeholder="ایمیل ر وارد نمائید" required="">
 
                                 <div class="col-lg-12 col-12">
-                                    <button type="submit" class="form-control" id="submit">Subscribe</button>
+                                    <button type="submit" class="form-control" id="submit">عضو شوید </button>
                                 </div>
                             </form>
                         </div>
