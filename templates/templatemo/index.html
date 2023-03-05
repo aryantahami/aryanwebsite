@@ -11,159 +11,167 @@
 {% block content %}
 
 
-        <main>
+    <main>
 
-            <section class="hero-section">
-                <div class="container">
-                    <div class="row">
+        <section class="hero-section">
+            <div class="container">
+                <div class="row">
 
-                        <div class="col-lg-12 col-12">
-                            <div class="text-center mb-5 pb-2">
-                                <h1 class="text-white">به دنیای آینده خوش آمدید</h1>
+                    <div class="col-lg-12 col-12">
+                        <div class="text-center mb-5 pb-2">
+                            <h1 class="text-white">به کلینیک حیوانات خانگی رویال خوش آمدید</h1>
 
-                                <p class="text-white">ما با کمک به هم میتوانیم به سمت یک آینده زیبا برویم</p>
+                            <p class="text-white">ما به شما کمک میکنیم تا زندگی زیبایی با حیوانات خانگی خود داشته
+                                باشید </p>
 
-                                <a href="#section_2" class="btn custom-btn smoothscroll mt-3">شروع کنید</a>
+                            {#                                <a href="#section_2" class="btn custom-btn smoothscroll mt-3">شروع کنید</a>#}
+                        </div>
+
+                        <div class="owl-carousel owl-theme">
+
+                            <!--dog-->
+                            <div class="owl-carousel-info-wrap item">
+                                <img src="../../static/images/pet/pet-dog.png"
+                                     class="owl-carousel-image img-fluid"
+                                     alt="">
+                                <div class="owl-carousel-info">
+                                    <a class="mb-2" href="{% url 'dogs' %}">
+                                        سگ ها
+                                        <img src="../../static/images/verified.png"
+                                             class="owl-carousel-verified-image img-fluid" alt="">
+                                    </a>
+
+                                    <span class="badge">نگهداری</span>
+
+                                    <span class="badge">آموزش</span>
+                                </div>
+
+                                <div class="social-share">
+                                    <ul class="social-icon">
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-twitter"></a>
+                                        </li>
+
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-facebook"></a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
 
-                            <div class="owl-carousel owl-theme">
+                            <!--cat-->
+                            <div class="owl-carousel-info-wrap item">
+                                <img src="../../static/images/pet/pet-cat.png" class="owl-carousel-image img-fluid"
+                                     alt="">
+                                <div class="owl-carousel-info">
+                                    <a class="mb-2" href="{% url 'cats' %}">
+                                        گربه ها
+                                        <img src="../../static/images/verified.png"
+                                             class="owl-carousel-verified-image img-fluid" alt="">
+                                    </a>
 
-<!--pet-->
-                                <div class="owl-carousel-info-wrap item">
-                                    <img src="../../static/images/profile/dog_ai.jpg" class="owl-carousel-image img-fluid" alt="">
-                                    <div class="owl-carousel-info">
-                                        <h4 class="mb-2">
-                                            حیوانات خانگی
-                                            <img src="../../static/images/verified.png" class="owl-carousel-verified-image img-fluid" alt="">
-                                        </h4>
+                                    <span class="badge">نگهداری </span>
 
+                                    <span class="badge">آموزش </span>
+                                </div>
+
+                                <div class="social-share">
+                                    <ul class="social-icon">
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-twitter"></a>
+                                        </li>
+
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-facebook"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!--bird-->
+                            <div class="owl-carousel-info-wrap item">
+                                <img src="../../static/images/pet/parrot-bird.png"
+                                     class="owl-carousel-image img-fluid" alt="">
+                                <div class="owl-carousel-info">
+                                    <h4 class="mb-2">
+                                        پرندگان
+                                        <img src="../../static/images/verified.png"
+                                             class="owl-carousel-verified-image img-fluid" alt="">
+                                    </h4>
+                                    <a href="{% url 'birds' %}">
+                                        <span class="badge">نگهداری  </span>
+                                    </a>
+                                    <span class="badge">تغذیه</span>
+                                </div>
+
+                                <div class="social-share">
+                                    <ul class="social-icon">
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-twitter"></a>
+                                        </li>
+
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-facebook"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!--rodents-->
+                            <div class="owl-carousel-info-wrap item">
+                                <img src="../../static/images/pet/rodents.png" class="owl-carousel-image img-fluid"
+                                     alt="">
+                            <div class="owl-carousel-info">
+                                    <h4 class="mb-2">جوندگان</h4>
+                                    <a href="{% url 'rodents' %}">
                                         <span class="badge">نگهداری</span>
+                                    <a/>
+                                        <span class="badge">ویژگی ها </span>
+                            </div>
+                                <div class="social-share">
+                                    <ul class="social-icon">
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-twitter"></a>
+                                        </li>
 
-                                        <span class="badge">آموزش</span>
-                                    </div>
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-facebook"></a>
+                                        </li>
 
-                                    <div class="social-share">
-                                        <ul class="social-icon">
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-twitter"></a>
-                                            </li>
-
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-facebook"></a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-pinterest"></a>
+                                        </li>
+                                    </ul>
+                                </div>
                                 </div>
 
-<!--metaverse-->
-                                <div class="owl-carousel-info-wrap item">
-                                    <img src="../../static/images/profile/metaverse.jpg" class="owl-carousel-image img-fluid" alt="">
-                                    <div class="owl-carousel-info">
-                                        <a class="mb-2" href="{% url 'meta' %}">
-                                            متاورس
-                                            <img src="../../static/images/verified.png" class="owl-carousel-verified-image img-fluid" alt="">
-                                        </a>
+                            <!-- reptiles -->
+                            <div class="owl-carousel-info-wrap item">
+                                <img src="../../static/images/pet/reptiles.png" class="owl-carousel-image img-fluid"
+                                     alt="">
+<a href="{% url 'reptiles' %}">
+                                <div class="owl-carousel-info">
+                                    <h4 class="mb-2">خزندگان</h4>
 
-                                        <span class="badge">شغل</span>
+                                    <span class="badge">پزشکی</span>
 
-                                        <span class="badge">سرمایه گذاری</span>
-                                    </div>
-
-                                    <div class="social-share">
-                                        <ul class="social-icon">
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-twitter"></a>
-                                            </li>
-
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-facebook"></a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    <span class="badge">درمان مجازی</span>
                                 </div>
+</a>
+                                <div class="social-share">
+                                    <ul class="social-icon">
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-twitter"></a>
+                                        </li>
 
-<!--the future of children-->
-                                <div class="owl-carousel-info-wrap item">
-                                    <img src="../../static/images/profile/airobat2.jpg" class="owl-carousel-image img-fluid" alt="">
-                                    <div class="owl-carousel-info">
-                                        <h4 class="mb-2">
-                                            آینده فرزندان
-                                            <img src="../../static/images/verified.png" class="owl-carousel-verified-image img-fluid" alt="">
-                                        </h4>
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-facebook"></a>
+                                        </li>
 
-                                        <span class="badge">آموزش </span>
-
-                                        <span class="badge">آینده نگری</span>
-                                    </div>
-
-                                    <div class="social-share">
-                                        <ul class="social-icon">
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-twitter"></a>
-                                            </li>
-
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-facebook"></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-<!--mental health-->
-                                <div class="owl-carousel-info-wrap item">
-                                    <img src="../../static/images/profile/mental-health.jpg" class="owl-carousel-image img-fluid" alt="">
-
-                                    <div class="owl-carousel-info">
-                                        <h4 class="mb-2">سلامت روح و روان</h4>
-
-                                        <span class="badge">کوچینگ</span>
-
-                                        <span class="badge">روانشناسی</span>
-                                    </div>
-
-                                    <div class="social-share">
-                                        <ul class="social-icon">
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-twitter"></a>
-                                            </li>
-
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-facebook"></a>
-                                            </li>
-
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-pinterest"></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-<!-- health           -->
-                                <div class="owl-carousel-info-wrap item">
-                                    <img src="../../static/images/profile/health.jpg" class="owl-carousel-image img-fluid" alt="">
-
-                                    <div class="owl-carousel-info">
-                                        <h4 class="mb-2">سلامت جسم</h4>
-
-                                        <span class="badge">پزشکی</span>
-
-                                        <span class="badge">درمان مجازی</span>
-                                    </div>
-
-                                    <div class="social-share">
-                                        <ul class="social-icon">
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-twitter"></a>
-                                            </li>
-
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-facebook"></a>
-                                            </li>
-
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-pinterest"></a>
-                                            </li>
-                                        </ul>
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-pinterest"></a>
+                                        </li>
+                                    </ul>
                                     </div>
                                 </div>
 

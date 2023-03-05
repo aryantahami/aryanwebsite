@@ -19,5 +19,21 @@ def aryan_html(request):
     # return HttpResponse(response_data)
 
 
-def meta(request):
-    return render(request, 'pages/metaverse.html')
+def cats(request):
+    return render(request, 'pages/cats.html')
+
+
+def dogs(request):
+    return render(request, 'pages/dogs.html')
+
+
+def birds(request):
+    return render(request, 'pages/birds.html')
+
+
+def rodents(request):
+    return render(request, 'pages/rodents.html')
+
+
+def reptiles(request):
+    return render(request, 'pages/reptiles.html')
